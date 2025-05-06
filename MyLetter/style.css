@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(skyblue, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+}
+h1{
+    font-family: "Script MT Bold", cursive;
+    font-size: 50px;
+}
+h2{
+    font-family: "Dancing script", cursive;
+    font-size: 30px;
+}
+p{
+    font-family: "Dancing script", cursive;
+    font-size: 20px;
+}
+summary{
+    font-family: "Dancing script", cursive;
+    font-size: 20px;
+}
+details{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+#avatar{
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+img{
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+/* CSS cho chế độ tối */
+.dark-mode {
+    background: linear-gradient(#041B2D, #004E9A);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+}
