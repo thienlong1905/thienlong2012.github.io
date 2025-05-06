@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Love Letter</title>
+    <meta charset="UTF-8">  
+    <meta name = "Love Letter Page" content = "Love Letter" />
+    <meta name = "keywords" content = "Love Letter" />
+    <meta name = "Love Letter description" content = "Love Letter" />
+    <meta name = "author" content = "Thiên Long" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="900" />
+    <link rel = "stylesheet" href="./style.css">
+</head>
+<body>
+    <h1><b><big>Hãy sống tốt hơn sau khi xa em nhé</big></b></h1>
+    <ul>
+        <li><h2>Chúc chị đậu vào ngôi trường cấp 3 mơ ước</h2></li>
+        <li><h2>Chúc chị đậu vào Chuyên Toán Quốc Học nha</h2></li>
+        <li><h2>Có lẽ em sẽ nhớ chị lắm</h2></li>
+        <li><h2>Vậy nên sau này, nếu chị lên cấp 3 rồi, thì hãy liên lạc với em nhiều hơn nhé</h2></li>
+        <li><h2>Em sẽ không quên chị đâu</h2></li>
+        <li><h2>Em sẽ không quên những kỉ niệm đẹp của chúng ta</h2></li>
+        <li><h2>Em sẽ chẳng bao giờ quên những khoảng thời gian từ khi em gặp được chị</h2></li>
+        <li><h2>Mong một ngày nào đó trong tương lai ta sẽ gặp lại nhau</h2></li>
+        <li><h2>Hãy làm ny của em nhé!</h2></li>
+            <h2>Goodbye, My Love</h2>
+    </ul>
+    <img src = "./myLove.jpg" alt = "My Love" title="This is My Love"height = "300"> <img src = "./myLove2.jpg" alt = "My Love" tittle = "This is My Love"height = "300"> <img src = "./Pictures/avatar.png" alt = "ThienLong" title="ThienLong"height = "300"> <img src = "./Pictures/NTP_Campsite.jpg" alt = "NTP Campsite" title="This is NTP Campsite"height = "300">
+    <video autoplay controls height = "800"alt = "HOA CỎ LAU" title="HOA CỎ LAU">
+        <source src = "./HOA CỎ LAU.mp4">
+        <source src = "./HOA CỎ LAU.webm">
+        <source src = "./HOA CỎ LAU.ogv">
+    </video>
+    <h2>Hãy luôn sống tốt nhé</h2>
+    <h2>Em sẽ luôn đợi chị!</h2>
+    <div>
+        <button id="toggleBtn" style ="border-radius: 10px; background-color: grey">
+            <h2>Change Light-Dark Mode</h2>
+        </button>
+    </div>
+    <script>
+        document.getElementById("toggleBtn").addEventListener("click", function() {
+          document.body.classList.toggle("dark-mode");
+          
+          // Lưu trạng thái vào localStorage
+          if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
+        });
+      
+        // Kiểm tra trạng thái khi tải trang
+        if (localStorage.getItem("theme") === "dark") {
+          document.body.classList.add("dark-mode");
+        }
+    </script>
+</body>
+</html>
